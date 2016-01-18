@@ -44,8 +44,6 @@ RUN mv ${HTML_DIR}/config.dist.php ${HTML_DIR}/config.php && \
     ${HTML_DIR}/config.php && \
     chown -R www-data:www-data ${HTML_DIR}
 
-VOLUME ["${HTML_DIR}"]
-
 EXPOSE 80 443
 
 COPY run.sh /run.sh
